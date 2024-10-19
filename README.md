@@ -112,8 +112,8 @@ O cliente exibirá a mensagem **"Timeout: Nenhuma resposta do servidor. Tentando
 
 ### Estrutura de Arquivos
 
-- `servidor_udp.py`: Código do servidor UDP que gerencia as conexões e mensagens dos clientes.
-- `cliente_udp.py`: Código do cliente UDP que se conecta ao servidor e envia mensagens.
+- `server_udp.py`: Código do servidor UDP que gerencia as conexões e mensagens dos clientes.
+- `client_udp.py`: Código do cliente UDP que se conecta ao servidor e envia mensagens.
 - `README.md`: Este arquivo de instruções.
 
 ## Exemplo de uso
