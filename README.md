@@ -26,8 +26,8 @@ O sistema consiste em dois componentes principais:
 ### 1. Clonar o repositório
 
 ```bash
-git clone <URL_DO_REPOSITORIO>
-cd <NOME_DO_DIRETORIO>
+git clone https://github.com/cl1sman/mini-x.git
+cd mini-x
 ```
 
 ### 2. Executar o servidor
@@ -35,7 +35,7 @@ cd <NOME_DO_DIRETORIO>
 O servidor deve ser iniciado primeiro. Ele escuta as conexões de clientes na porta 12345.
 
 ```bash
-python3 servidor_udp.py
+python3 server_udp.py
 ```
 
 Você deve ver a seguinte saída ao iniciar o servidor:
@@ -49,7 +49,7 @@ Você deve ver a seguinte saída ao iniciar o servidor:
 Inicie o cliente em uma outra janela de terminal ou em outra máquina. Cada cliente precisa de um ID e um nome único.
 
 ```bash
-python3 cliente_udp.py
+python3 client_udp.py
 ```
 
 Ao iniciar, o cliente pedirá o IP do servidor, a porta e o ID do cliente. Exemplo de execução:
@@ -102,7 +102,7 @@ O servidor mantém logs de todas as atividades importantes, como conexões e des
 
 ### Timeout do cliente
 
-Por padrão, o timeout do cliente é configurado para **30 segundos**. Caso queira aumentar ou reduzir o tempo, basta alterar o valor da variável `TIMEOUT` no arquivo `cliente_udp.py`.
+Por padrão, o timeout do cliente é configurado para **30 segundos**. Caso queira aumentar ou reduzir o tempo, basta alterar o valor da variável `TIMEOUT` no arquivo `client_udp.py`.
 
 ```python
 TIMEOUT = 30  # Timeout ajustado para 30 segundos
@@ -120,12 +120,12 @@ O cliente exibirá a mensagem **"Timeout: Nenhuma resposta do servidor. Tentando
 
 1. Inicie o **servidor**:
    ```bash
-   python3 servidor_udp.py
+   python3 server_udp.py
    ```
 
 2. Inicie dois **clientes** (em terminais diferentes ou máquinas diferentes):
    ```bash
-   python3 cliente_udp.py
+   python3 client_udp.py
    ```
    Digite o IP do servidor e os dados do cliente conforme solicitado.
 
