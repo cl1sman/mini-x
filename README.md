@@ -130,7 +130,3 @@ O cliente exibirá a mensagem **"Timeout: Nenhuma resposta do servidor. Tentando
    Digite o IP do servidor e os dados do cliente conforme solicitado.
 
 3. Envie mensagens entre os clientes ou envie uma mensagem para todos.
-
----
-
-**Autor**: Clisman Mariano
