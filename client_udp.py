@@ -4,8 +4,7 @@ from struct import pack, unpack
 import time
 
 MSG_FORMAT = "iiii20s140s"
-#TIMEOUT = 5  # Timeout de 5 segundos para tentar reconectar
-TIMEOUT = 20
+TIMEOUT = 30  # Timeout de 30 segundos para tentar reconectar
 
 def receive_messages(client_socket):
     while True:
